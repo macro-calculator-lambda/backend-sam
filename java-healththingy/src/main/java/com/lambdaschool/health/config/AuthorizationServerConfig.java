@@ -12,7 +12,7 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Configuration
-
+@CrossOrigin
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter
 {

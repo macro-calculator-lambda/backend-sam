@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
-
+@CrossOrigin
 @RestController
 @RequestMapping("/roles")
 public class RolesController
@@ -22,6 +22,7 @@ public class RolesController
     RoleService roleService;
 
     @GetMapping(value = "/roles", produces = {"application/json"})
+
     public ResponseEntity<?> listRoles()
     {
         List<Role> allRoles = roleService.findAll();

@@ -26,7 +26,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 
-
+@CrossOrigin //YOU CAN USE ORIGINS TO SPECIFY
 @RestController
 @RequestMapping(value = "/current")
 public class UserInfoController
